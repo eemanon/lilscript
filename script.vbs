@@ -1,7 +1,7 @@
-Dim WShell
 Do
+Dim WShell
 Set WShell = CreateObject("WScript.Shell")
-WScript.Sleep 10000
 WShell.Run "my.hta", 1, True
 Set WShell = Nothing
+WScript.Sleep 10000
 Loop

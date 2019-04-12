@@ -1,0 +1,27 @@
+<head>
+<title>SplashScreen</title>
+<HTA:APPLICATION ID="oHTA"
+  APPLICATIONNAME="SplashScreen"
+  SCROLL="no"
+  SINGLEINSTANCE="yes"
+  WINDOWSTATE="maximize"
+>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+</style>
+</head>
+
+<script language="VBScript">
+  Sub Window_onLoad
+    document.all.splash.width = document.body.offsetWidth
+    document.all.splash.height = document.body.offsetHeight
+  End Sub
+</script>
+
+<body>
+<p><img id='splash' src='200w.gif'></p>
+</body>
